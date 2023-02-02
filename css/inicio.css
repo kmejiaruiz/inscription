@@ -1,0 +1,149 @@
+.div {
+  width: 50% !important;
+  flex-wrap: wrap !important;
+}
+
+.dirigir {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.dirigir:hover {
+  color: red;
+  transition: all 0.3s;
+}
+
+.lista {
+  padding: 7px 9px;
+  background: rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+  display: flex;
+  gap: 3px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlador {
+  display: grid;
+  place-items: center;
+}
+
+.lista > li {
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.ancla {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.ancla:focus,
+.ancla:hover {
+  text-decoration: underline;
+}
+.nombre-mensaje,
+.modalidad-mensaje,
+.anio-mensaje {
+  font-size: 25px;
+  color: #918f8f;
+}
+.modalidad-mensaje {
+  font-size: 20px;
+}
+.fase {
+  /* width: 100%; */
+  padding: 10px 8px;
+  background-color: rgb(231, 230, 230);
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  border-radius: 5px;
+}
+.contenedor-fases {
+  width: 90%;
+  display: flex;
+  gap: 35px;
+  /* text-align: left; */
+  justify-content: center;
+}
+.indicador {
+  color: #3333eb;
+  font-weight: bold;
+}
+
+.contenedor-tabla {
+  border: solid 1px #d3d2d2fa;
+  background: #f3f1f1fa;
+  padding: 20px 20px;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Querys */
+@media (max-width: 1030px) {
+  .div {
+    width: 40% !important;
+  }
+
+  .lista-hijo {
+    max-width: 110px !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .div {
+    width: 30% !important;
+  }
+
+  .lista > li {
+    font-size: small;
+  }
+}
+
+@media (max-width: 688px) {
+  .div {
+    width: 100% !important;
+  }
+
+  .lista-hijo {
+    max-width: unset !important;
+  }
+}
+@media (max-width: 575px) {
+  .contenedor-fases {
+    gap: 0px;
+    align-items: center;
+  }
+}
+@media (max-width: 420px) {
+  header > div > h2 {
+    margin: 0 !important;
+  }
+
+  .lista-hijo {
+    max-width: 50px !important;
+  }
+
+  .div {
+    width: 40% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .div {
+    width: 100% !important;
+    justify-content: center !important;
+    /* align-items: center; */
+  }
+
+  .lista-hijo {
+    max-width: 85px !important;
+  }
+}

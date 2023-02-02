@@ -1,0 +1,53 @@
+ul {
+  width: 100%;
+  margin: 2rem 0;
+  /*ul*/ }
+  ul li {
+    width: 100%;
+    padding: 0.5rem;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #dedede; }
+    ul li:last-of-type {
+      border-bottom: none; }
+    ul li.deshabilitado {
+      cursor: not-allowed;
+      position: relative; }
+    ul li > div:first-child {
+      width: 95%; }
+    ul li > div:last-child i {
+      font-size: 1.5rem;
+      color: #a8a8a8;
+      transition: 0.2s; }
+      ul li > div:last-child i.deshabilitado:before {
+        content: "\f128"; }
+    ul li > div:last-child input.marcado:checked + i {
+      color: #2bcc20; }
+    ul li > div .componente {
+      display: flex;
+      flex-flow: row nowrap; }
+      ul li > div .componente div {
+        margin-right: auto;
+        flex: 80% 1 0; }
+        ul li > div .componente div:last-child {
+          border-left: 1px solid #c7c7c7;
+          padding-left: 0.7rem;
+          width: auto;
+          flex: 20% 1 0;
+          margin-left: auto; }
+        ul li > div .componente div i.ion-close-circled {
+          color: #ff4143; }
+        ul li > div .componente div i.ion-checkmark-circled {
+          color: #2bcc20; }
+    ul li input {
+      display: none; }
+
+.datos {
+  margin: 1.2rem 0;
+  line-height: 150%; }
+  .datos h3 {
+    text-align: center;
+    margin-bottom: 15px; }
+
+/*# sourceMappingURL=detalle_inscripcion.css.map */

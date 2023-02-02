@@ -1,0 +1,408 @@
+/******************************************************************/
+
+a>i.ion-power
+{
+    padding-right:4px;
+}
+
+a[href$="hcd_supervision"]
+{
+    margin-right:10px;
+}
+
+.ion-android-home
+{
+    padding-right:4px;
+}
+
+a[href*="cerrar_sesion"]
+{
+    color:#e74c3c;
+}
+label
+{
+    cursor:default;
+}
+
+/******************************************************************/
+
+
+/********************************/
+/*Navegacion*/
+/********************************/
+
+
+.menu-navegacion
+{
+    width: 80%;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.menu-navegacion > ul > li
+{
+    float: left;
+    vertical-align: middle;
+    line-height: 45px;
+    background-color: #cbcbcb;
+    border-radius: 25px;
+    margin-left: -35px;
+    border-left: 5px solid #fff;
+    border-right: none;
+    font-size: 85%;
+    text-align: center;
+    padding-right: 10px;
+}
+.menu-navegacion > ul > li> span
+{
+    display: block;
+    text-align: center;
+    color: #646D76;
+    border: 1px solid #cbcbcb;
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    float: left;
+    background-color: #fff;
+}
+.menu-navegacion > ul > li> small
+{
+    /* margin-right: 50px; */
+    /* margin-left: 10px; */
+    display:inline-block;
+    max-width: 50%;
+    color: #646D76;
+    line-height: initial;
+    text-align: left;
+    vertical-align: middle;
+}
+.paso-seleccionado
+{
+    background-color: #646D76 !important;
+    /*border: 1px solid #646D76 !important;*/
+}
+.paso-seleccionado > span
+{
+    color:#646D76 !important;
+}
+.paso-seleccionado > small
+{
+    color: #FFFFFF !important;
+}
+
+.hide
+{
+    display: none;
+}
+
+
+
+
+/********************************/
+
+
+.contenedor-izq
+{
+    float: left;
+}
+.contenedor-derc
+{
+    float: right;
+    padding-top: 1%;
+}
+.separador
+{
+    float: none;
+    border-top: 1px solid #cbcbcb;
+    height: 1px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#content header:first-of-type
+{
+    display: table;
+    width: 100%;
+    border-bottom:solid 1px #cbcbcb;
+    padding: 10px 0;
+}
+header h1
+{
+    display: inline-block;
+    color:#646D76;
+    margin-right: 10px;
+}
+header h1+h2
+{
+    
+}
+header h2
+{
+    display: inline-block;
+    color: #cbcbcb;
+    margin: 5px 0;
+}
+header h2:last-of-type
+{
+    margin-bottom:0;
+}
+h2.usuario
+{
+    color: #2060a7;
+    display: block;
+}
+
+h2.usuario span
+{
+    margin-left:15px;
+    color: #cbcbcb;
+    float: right;
+}
+
+table.interaccion
+{
+    float: none;
+    width: 100%;
+}
+
+
+table.interaccion a
+{
+    display:block;
+    width:100%;
+}
+
+
+.cuerpo-formulario
+{
+    /* box-shadow:0px 0px 1px #cecece, 1px 1px 1px #dedede; */
+    padding-top: 25px;
+    border-radius:5px;
+}
+
+section.interaccion,
+section.usuarios-pendientes {
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    padding: 20px 15px;
+    margin-top: 15px;
+}
+
+.contenedor-leyendas
+{
+
+    float:right;
+}
+.contenedor-leyendas p{
+    display:inline-block;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+
+.contenedor-leyendas i
+{
+    color: #1F60A7;
+    padding-right: 5px;
+}
+
+section
+{
+    margin: 25px 0;
+}
+
+h2
+{
+    text-align:left;
+}
+
+
+section:nth-of-type(odd)
+{
+    background: #F9F9F9;
+}
+
+
+
+
+button {
+    padding:10px;
+    font-size:100%;
+    margin-top:10px;
+}
+
+table i
+{
+    padding-right:10px;
+}
+.nav-derecha a
+{
+    padding:10px;
+}
+.nav-derecha
+{
+    position:fixed;
+    right:0;
+    background-color:#696969;
+    border-radius:5px;
+    top:25%;
+    z-index: 999;
+}
+
+.nav-derecha a[href*="ct_chat/index"]
+{
+    color:white;
+    display:block;
+}
+
+.nav-derecha a[href*="ct_chat/index"]:before
+{
+    font-family:'Ionicons';
+    content:"\f2d4";
+    font-size:150%;
+    padding-right:5px;
+}
+
+/* Barra que muestra la fase activa*/
+
+.fase_activa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    margin-top: 10px;
+}
+
+.fase_activa li:nth-child(3){
+    margin-left: 20px;
+}
+
+.fase_activa li:nth-child(3):before{
+    content: '';
+}
+
+.fase_activa_item + .fase_activa_item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+.fase_activa_item.grupos_fase + .fase_activa_item.grupos_fase::before {
+    display: none;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.fase_activa_item .ion-information-circled{
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.ion-information-circled {
+    display: inline-block;
+    -webkit-animation-name: tooltip_fases;
+    -moz-animation-name: tooltip_fases;
+    -o-animation-name: tooltip_fases;
+    animation-name: tooltip_fases;
+
+    -webkit-animation-duration: 0.9s;
+    -moz-animation-duration: 0.9s;
+    -o-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes tooltip_fases {
+    0% {
+        opacity: 0;
+        transform: scale(6);
+    }
+
+    50% {
+        transform: scale(4);
+    }
+
+    80% {
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Barra que muestra la fase activa*/
+
+
+/*Tooltip*/
+
+.ui-tooltip {
+    max-width: 500px;
+}
+
+/*.ui-tooltip {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 0;
+    opacity: 1;
+}*/
+/*.ui-tooltip-content {
+    position: relative;
+    padding: 1em;
+}*/
+
+.ui-tooltip-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+}
+.right .ui-tooltip-content::after {
+    top: 8px;
+    left: -8px;
+    border-color: transparent #1f60a7;
+    border-width: 8px 8px 8px 0;
+}
+.left .ui-tooltip-content::after {
+    top: 18px;
+    right: -10px;
+    border-color: transparent #666;
+    border-width: 10px 0 10px 10px;
+}
+.top .ui-tooltip-content::after {
+    bottom: -10px;
+    left: 72px;
+    border-color: #666 transparent;
+    border-width: 10px 10px 0;
+}
+.bottom .ui-tooltip-content::after {
+    top: -10px;
+    left: 72px;
+    border-color: #666 transparent;
+    border-width: 0 10px 10px;
+}
+
+/*Tooltip*/
+
+.mensaje_sin_componente {
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
