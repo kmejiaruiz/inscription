@@ -129,21 +129,25 @@
   .lista-hijo {
     max-width: 50px !important;
   }
-
-  .div {
-    width: 40% !important;
-    height: auto !important;
+  header > div{
+    justify-content: center !important;
+    align-items: center !important;
   }
-}
 
-@media (max-width: 375px) {
   .div {
     width: 100% !important;
     justify-content: center !important;
-    /* align-items: center; */
+    /* height: auto !important; */
   }
-
   .lista-hijo {
     max-width: 85px !important;
   }
 }
+
+/* @media (max-width: 375px) {
+  .div {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+} */

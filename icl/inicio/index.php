@@ -21,6 +21,7 @@ include('../../php/consulta-componentes.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Inicio | Inscripci&oacute;n de Componentes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="canonical" href="http://localhost/inscripcion-componentes/icl/inicio">
     <!-- <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon"> -->
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/loader.css">
@@ -108,12 +109,12 @@ include('../../php/consulta-componentes.php');
                 <div class="row">
                     <div class="col-12">
                         <div class="btn-inscripcion mb-3">
-                            <button class="btn btn-primary">Nueva Inscripci&oacute;n</button>
+                            <button class="btn btn-primary" id="inscribir">Nueva Inscripci&oacute;n</button>
                         </div>
                         <hr>
                         <div class="table-responsive">
                             <table class="table table-striped m-0 text-center">
-                                <thead style="">
+                                <thead>
                                     <tr>
                                         <th scope="col">A&ntilde;o</th>
                                         <th scope="col">Ciclo Regimen</th>
