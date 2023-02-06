@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-// if (empty($_SESSION["usuario"])) {
-//     header('location: ../../');
-// }
+if (empty($_SESSION["usuario"])) {
+    header('location: ../../');
+}
 #Agregamos la conexion a la base de datos
 include('../../php/conectar.php');
 
@@ -22,7 +22,7 @@ include('../../php/consulta-componentes.php');
     <title>Pagina de Inicio | Inscripci&oacute;n de Componentes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <link rel="canonical" href="http://localhost/inscripcion-componentes/icl/inicio">
-    <!-- <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/loader.css">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">

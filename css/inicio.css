@@ -4,7 +4,7 @@
 }
 
 .dirigir {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #fff;
   transition: all 0.3s;
 }

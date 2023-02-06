@@ -11,5 +11,6 @@ dirigir.addEventListener("click", () => {
 });
 
 inscribir.addEventListener("click", () => {
-    window.location = "../../icl/index.php";
+    window.location = "../../icl/";
 });
+
