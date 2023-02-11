@@ -17,7 +17,7 @@ if (empty($_SESSION["usuario"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A la Libertad por la Universidad! - Inscribir Componentes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <link rel="canonical" href="http://localhost/inscripcion-componentes/icl/inicio">
+    <link rel="canonical" href="http://localhost/inscription/icl/">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/loader.css">
