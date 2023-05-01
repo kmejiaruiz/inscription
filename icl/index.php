@@ -4,6 +4,11 @@ if (empty($_SESSION["usuario"])) {
     header('location: ../');
 }
 
+include("../php/conectar.php");
+include("../php/consulta-componentes.php");
+
+// Consultamos a la base de datos
+$user = "SELECT * from inscribir_comp";
 ?>
 
 
@@ -109,18 +114,95 @@ if (empty($_SESSION["usuario"])) {
         <div class="container-fluid">
             <div class="contenedor-tabla">
                 <div class="row">
-                    <div class="col-12"></div>
+                    <div class="col-12">
+                        <div class="container">
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Componente</th>
+                                        <th>Ciclo</th>
+                                        <th>Creditos</th>
+                                        <th>A&ntilde;o</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $result = mysqli_query($conectar, $user);
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        $comp = $row['componente'];
+                                        $id = $row['id'];
+                                        echo "<tr>";
+                                        echo "<td>$comp</td>";
+                                        echo "<td><a href='#' data-bs-toggle='modal' data-bs-target='#modal$id'>$comp</a></td>";
+                                        echo "</tr>";
+                                        // Ventana modal para seleccionar turno
+                                        echo "<div class='modal fade' id='modal$row[id]' role='dialog'>";
+                                        echo "<div class='modal-dialog'>";
+                                        echo "<div class='modal-content'>";
+                                        echo "<div class='modal-header'>";
+                                        echo "<button type='button' class='close' data-bs-dismiss='modal'>&times;</button>";
+                                        echo "<h4 class='modal-title'>Seleccionar turno para $comp</h4>";
+                                        echo "</div>";
+                                        echo "<div class='modal-body'>";
+                                        echo "<form method='post' action='guardar_turno.php'>";
+                                        echo "<input type='hidden' name='elemento_id' value='$id'>";
+                                        echo "<label for='turno'>Turno:</label>";
+                                        echo "<select name='turno' id='turno'>";
+                                        echo "<option value='Mañana'>Mañana</option>";
+                                        echo "<option value='Tarde'>Tarde</option>";
+                                        echo "</select>";
+                                        echo "<br><br>";
+                                        echo "<input type='submit' value='Guardar'>";
+                                        echo "</form>";
+                                        echo "</div>";
+                                        echo "<div class='modal-footer'>";
+                                        echo "<button type='button' class='btn btn-default' data-bs-dismiss='modal'>Cerrar</button>";
+                                        echo "</div>";
+                                        echo "</div>";
+                                        echo "</div>";
+                                        echo "</div>";
+                                    }
+                                    ?>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- <div class="modal fade" id="modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Seleccione un turno</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="post">
+                        <input type="hidden" name="elemento" value="<?php $row['id'] ?>">
+                        <label for="turno">Turno:</label>
+                        <select name="turno" id="turn">
+                            <option value="Ma&ntilde;ana">Ma&ntilde;na</option>
+                            <option value="Tarde">Tarde</option>
+                        </select>
+                        <br><br>
+                        <button class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         const anioCorriente = new Date().getFullYear();
         const span = document.querySelector("#span");
         span.textContent += `${anioCorriente}`;
     </script>
     <!-- <script src="../js/redirigir.js"></script> -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/jquery-3.6.3.min.js"></script>
     <script src="../js/script-loader.js"></script>
 </body>

@@ -13,4 +13,4 @@ $componntes_obligatoria = "select * from componentes where verano = 1 and tipo =
 #consultamos los componentes ya antes inscritos "OJO, SE HAN INSERTADO LOS DATOS, ESTOS DATOS NO SON DINAMICOS, SINO ESTATICOS POR EL MOMENTO"
 $listar_inscripciones = "select * from `registro-componentes`";
 
-?>
+$seleccionar_inscripciones = "select * from `inscribir_comp`";

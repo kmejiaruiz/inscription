@@ -88,6 +88,7 @@
                       name="pin"
                       id="exampleInputApellido"
                       placeholder="prueba123#"
+                      maxlength="6"
                     />
                   </div>
                 </div>
